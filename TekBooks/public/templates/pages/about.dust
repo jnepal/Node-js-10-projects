@@ -1,0 +1,13 @@
+{>"layouts/master" /}
+{<title}
+	About TekBooks
+{/title}
+
+{<body}
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>About Us</h2>
+			<p>Tek Books is a online book store.</p>
+		</div>
+	</div>
+{/body}

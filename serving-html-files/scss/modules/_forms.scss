@@ -1,0 +1,27 @@
+/* Search Box */
+
+.search{
+	width:100%;
+	
+	h3{
+		margin-top:0px;
+		padding:0px;
+	}
+	input[type="search"]{
+		border:0;
+		height:50px;
+		width:80%;
+		border:2px solid $primary-color;
+		font-size:18px;
+		padding-left:10px;
+		padding-bottom:5px;
+	}
+	
+	button{
+		border:0px;
+		background:none;
+		padding:0px;
+		vertical-align:top;
+		margin-left:-4px;
+	}
+}

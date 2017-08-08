@@ -1,0 +1,88 @@
+extends layout
+
+block content
+    h2 Add Doctor
+    form(method="post" action="/doctors/add" class="addForm")
+      div
+        label Full Name
+        input(type='text', name='fullname')
+      div
+        label Category
+        select(name='category')
+          each category, i in categories
+           option(value='General') #{category.name}
+          
+      div
+        label Accepting New Patients
+        select(name='newPatients')
+          option(value='Yes') Yes
+          option(value='No') No
+      div
+        label Practice Name
+        input(type='text', name='practiceName')
+      div
+        label Graduation Year
+        input(type='text', name='graduationYear')
+      div
+        label Street Address
+        input(type='text', name='streetaddress')  
+      div
+        label City
+        input(type='text', name='city')
+      div
+        label State
+        select(name='state')
+          option Alabama
+          option Alaska
+          option Arizona
+          option Arkansas
+          option California
+          option Colorado
+          option Connecticut
+          option Delaware
+          option Florida
+          option Georgia
+          option Hawaii
+          option Idaho
+          option Illinois
+          option Indiana
+          option Iowa
+          option Kansas
+          option Kentucky
+          option Louisiana
+          option Maine
+          option Maryland
+          option Massachusetts
+          option Michigan
+          option Minnesota
+          option Mississippi
+          option Missouri
+          option Montana
+          option Nebraska
+          option Nevada
+          option New Hampshire
+          option New Jersey
+          option New Mexico
+          option New York
+          option North Carolina
+          option North Dakota
+          option Ohio
+          option Oklahoma
+          option Oregon
+          option Pennsylvania
+          option Rhode Island
+          option South Carolina
+          option South Dakota
+          option Tennessee
+          option Texas
+          option Utah
+          option Vermont
+          option Virginia
+          option Washington
+          option West Virginia
+          option Wisconsin
+          option Wyoming
+      div
+        label Zipcode
+        input(type='text', name='zipCode')
+      input(type='submit', value='Add Doctor')

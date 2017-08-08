@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	h1 Register
+	p Please input Required fields
+	ul.error
+		if(errors)
+			each error, i in errors
+				li.alert.alert-danger #{error.msg}
+	form(method='post', action='/users/register', enctype='multipart/form-data')
+		.form-group
+			label Name
+			input.form-control(name='name', type='text', placeholder='Enter Name' required)
+		.form-group
+			label Email
+			input.form-control(name='email', type='email', placeholder='Enter Email' required)
+		.form-group
+			label Username
+			input.form-control(name='username', type='text', placeholder='Enter Username' required)
+		.form-group
+			label Password
+			input.form-control(name='password', type='password', placeholder='Enter Password' required)
+		.form-group
+			label Confirm Password
+			input.form-control(name='confirmPassword', type='password', placeholder='Re-Enter Password' required)
+		.form-group
+			label Profile Picture
+			input.form-control(name='profileImage', type='file')
+		input.btn.btn-default(name='submit', type='submit', value='Register')

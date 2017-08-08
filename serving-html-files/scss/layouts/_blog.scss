@@ -1,0 +1,27 @@
+/* Blog */
+
+.blog-post{
+	@include add-border(1px, #cccccc, top);
+	@include add-border(1px, #cccccc, right-left);
+	
+	h2.page-header{
+		margin-top:5px !important;
+	}
+}
+.blog-featured{
+	float:left;
+	margin-right:15px;
+}
+.post-meta{
+	@include add-background(#c3c3c3);
+	padding:10px 10px 5px 10px;
+	@include add-border(1px, #cccccc, all); 
+	
+	.fa{
+		padding-left:2px !important;
+		
+	}
+}
+.read-more-pad{
+	margin-top:-35px !important;
+}

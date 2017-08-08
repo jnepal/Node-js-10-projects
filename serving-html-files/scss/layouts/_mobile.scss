@@ -1,0 +1,26 @@
+@media(max-width:768px){
+	.search{
+		display:inline-block;
+		text-align:center;
+	}
+	
+	.device{
+		display:block;
+		margin:20px auto 0px auto;
+	}
+	.device-small{
+		margin-bottom:20px !important;
+	}
+	.footer-main{
+		h4{
+			text-align:center;
+		}
+		ul{
+			margin-bottom:15px;
+			text-align:center;
+		}
+	}
+	.read-more-pad{
+		margin-top:-20px !important;
+	}
+}

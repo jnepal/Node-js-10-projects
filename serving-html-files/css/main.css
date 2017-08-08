@@ -1,0 +1,509 @@
+/*
+	SkyApp Bootstrap Sass Theme
+	Author: SND SABIN
+	Url: www.sabinb.com.np
+	Twitter: www.twitter.com/sndsabin
+	Version: 0.0.1
+*/
+/*BASE - Base styles, variables, mixins, etc*/
+/* Font Colors */
+/*Background Colors */
+/* Showcase Area */
+/* Mixins */
+h1, h2, h3, h4 {
+  margin-top: 0px;
+}
+
+.page-header {
+  margin-top: 30px;
+}
+
+.no-pad-top {
+  padding-top: 0px;
+}
+
+.extra-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pad-top {
+  padding-top: 20px;
+}
+
+.top-inner {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+/* Image Size */
+.img-xsm {
+  width: 100px;
+}
+
+.img-sm {
+  width: 200px;
+}
+
+.img-lg {
+  width: 400px;
+}
+
+.img-xlg {
+  width: 700px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+a {
+  color: #00aff0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+img.device {
+  width: 100%;
+}
+
+img.device-small {
+  width: 70%;
+  margin-bottom: -40px;
+}
+
+/* MODULES - Individual site components */
+/* Lists */
+.list, .list-feature {
+  margin-bottom: 30px;
+}
+
+.list-feature {
+  margin: 0px;
+  padding: 0px;
+  width: 80%;
+}
+.list-feature li {
+  line-height: 3.6em;
+  border-bottom: 1px solid #cccccc;
+}
+.list-feature li:last-child {
+  border: 0px;
+}
+.list-feature span {
+  vertical-align: top;
+  padding-top: 9px;
+  font-size: 120%;
+}
+.list-feature i {
+  margin-top: -9px;
+  margin-right: 5px;
+}
+
+.list-comments {
+  margin: 0px;
+  padding: 0px;
+}
+.list-comments img {
+  width: 100px;
+}
+.list-comments li {
+  padding: 10px 0px 5px 0px;
+  border-bottom: 1px solid #cccccc;
+  overflow: auto !important;
+}
+.list-comments li:last-child {
+  border: 0px !important;
+}
+
+/* Icons */
+.fa-2 {
+  font-size: 18px;
+}
+
+.fa-3 {
+  font-size: 24px;
+}
+
+.fa-4 {
+  font-size: 27px;
+}
+
+.fa-5 {
+  font-size: 35px;
+}
+
+.fa-6 {
+  font-size: 40px;
+}
+
+.fa-primary {
+  color: #00aff0;
+}
+
+.fa-border {
+  border: 1px solid #00aff0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 13px 15px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+.heading-primary, .heading-primary-a {
+  color: #00aff0;
+}
+
+.heading-primary-a {
+  border-bottom: 1px solid #00aff0;
+}
+
+.heading-secondary, .heading-secondary-a {
+  color: #7fba00;
+}
+
+.heading-secondary-a {
+  border-bottom: 1px solid #7fba00;
+}
+
+.heading-light, .heading-light-a {
+  color: #e4eef2;
+}
+
+.heading-light-a {
+  border-bottom: 1px solid #e4eef2;
+}
+
+.heading-dark, .heading-dark-a {
+  color: #2b5464;
+}
+
+.heading-dark-a {
+  border-bottom: 1px solid #2b5464;
+}
+
+/* Emphasis Text */
+.em-primary {
+  color: #00aff0;
+}
+
+.em-secondary {
+  color: #7fba00;
+}
+
+.em-light {
+  color: #e4eef2;
+}
+
+.em-dark {
+  color: #2b5464;
+}
+
+/* Blocks */
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.block-primary {
+  background: #00aff0;
+  color: #fff;
+}
+
+.block-secondary {
+  background: #7fba00;
+  color: #fff;
+}
+
+.block-light {
+  background: #e4eef2;
+  color: #6666666;
+}
+
+.block-dark {
+  background: #2b5464;
+  color: #fff;
+}
+
+.block-center {
+  text-align: center !important;
+}
+
+.block-image img {
+  width: 100%;
+}
+
+.block-border {
+  border: 1px solid #cccccc;
+}
+
+.block-primary-head h3 {
+  padding: 15px 5px 15px 10px;
+  background: #00aff0;
+  color: #fff;
+  margin: 0px;
+  font-size: 18px;
+}
+.block-primary-head .block-content {
+  border: 1px solid #00aff0;
+  padding: 10px;
+}
+
+.block-icon h3 {
+  padding: 0px;
+  margin: 0px;
+}
+.block-icon .icon {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+}
+.block-icon .icon-content {
+  float: left;
+  width: 70%;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #00aff0;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  background: #008abd;
+  border: 2px solid white;
+}
+
+/* Sections */
+section {
+  padding: 30px 0px;
+}
+
+.section-showcase {
+  height: 400px;
+  background-image: url("../img/showcase.jpg");
+}
+.section-showcase .showcase-content {
+  padding: 110px 15px;
+  text-align: center;
+}
+.section-showcase h1 {
+  color: #00aff0;
+}
+
+.section-primary, .section-primary-a, .section-primary-b {
+  background: #00aff0;
+  color: #fff;
+}
+
+.section-primary-a {
+  border-top: 4px solid #7fba00;
+}
+
+.section-primary-b {
+  border-bottom: 1px solid #7fba00;
+}
+
+.section-secondary {
+  background: #7fba00;
+  color: #fff;
+}
+
+.section-light {
+  background: #e4eef2;
+  color: #6666666;
+}
+
+.section-dark {
+  background: #2b5464;
+  color: #fff;
+}
+
+/* Carousel */
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  padding: 3px;
+  border: 3px solid #cccccc;
+}
+
+/* Tabs */
+.tab-pane {
+  padding: 20px 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus {
+  background: #00aff0;
+  color: #fff;
+}
+
+.tab-secondary .tab-pane, .tab-secondary .nav-tabs > li.active > a, .tab-secondary .nav-tabs > li.active > a:hover, .tab-secondary .nav-tabs > li.active > a:focus {
+  background: #7fba00;
+  color: #fff;
+}
+
+.tab-light .tab-pane, .tab-light .nav-tabs > li.active > a, .tab-light .nav-tabs > li.active > a:hover, .tab-light .nav-tabs > li.active > a:focus {
+  background: #e4eef2;
+  color: #6666666;
+}
+
+.tab-dark .tab-pane, .tab-dark .nav-tabs > li.active > a, .tab-dark .nav-tabs > li.active > a:hover, .tab-dark .nav-tabs > li.active > a:focus {
+  background: #2b5464;
+  color: #fff;
+}
+
+/* Search Box */
+.search {
+  width: 100%;
+}
+.search h3 {
+  margin-top: 0px;
+  padding: 0px;
+}
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #00aff0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.search button {
+  border: 0px;
+  background: none;
+  padding: 0px;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+/*LAYOUTS - Page Layout Styles */
+/* Navbar */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  min-height: 60px;
+  background: #fff;
+  border-color: #e7e7e7;
+  margin-bottom: 30px;
+}
+.navbar a {
+  color: #00aff0 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-top: 20px !important;
+  padding-bottom: 24px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background: #00aff0 !important;
+  color: #fff !important;
+}
+
+/* Footer */
+.footer-main {
+  background: #2b5464;
+  color: #fff;
+  border-top: 5px solid #7fba00;
+  color: white;
+  min-height: 200px;
+  padding: 30px 0px;
+  z-index: 100;
+}
+.footer-main a {
+  color: white;
+}
+.footer-main ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-main li {
+  line-height: 1.8em;
+  list-style: none;
+}
+
+/* Blog */
+.blog-post {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+.blog-post h2.page-header {
+  margin-top: 5px !important;
+}
+
+.blog-featured {
+  float: left;
+  margin-right: 15px;
+}
+
+.post-meta {
+  background: #c3c3c3;
+  color: #fff;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid #cccccc;
+}
+.post-meta .fa {
+  padding-left: 2px !important;
+}
+
+.read-more-pad {
+  margin-top: -35px !important;
+}
+
+@media (max-width: 768px) {
+  .search {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .device {
+    display: block;
+    margin: 20px auto 0px auto;
+  }
+
+  .device-small {
+    margin-bottom: 20px !important;
+  }
+
+  .footer-main h4 {
+    text-align: center;
+  }
+  .footer-main ul {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .read-more-pad {
+    margin-top: -20px !important;
+  }
+}

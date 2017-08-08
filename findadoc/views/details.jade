@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h3 Dr #{doctor.fullname}
+    br
+    h4 Physician Information
+    ul.doc-info
+      li Full Name: #{doctor.fullname}
+      li Accepting New Patients: #{doctor.newpatients}
+      li Speciality/Category: #{doctor.category}
+      li Graduation Date: #{doctor.graduationyear}
+    h4 Practice Information
+    ul.practice-info
+      li Name: #{doctor.practicename}
+      li Address: #{doctor.streetaddress} #{doctor.city} #{doctor.state} #{doctor.zip}
+      li Medicare Accepted: Yes
+    br
+    br
+    a(class='editDoctor' href='/doctor/edit/#{doctor.id}') Edit | 
+    a(class='deleteDoctor' data-id='#{doctor.id}') Delete

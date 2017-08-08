@@ -1,0 +1,24 @@
+extends layout-admin
+
+block content
+	h2 Add New Project
+	form(method='post', action='/admin/project/add', enctype='multipart/form-data')
+		.form-group
+			label Title
+				input.form-control(type='text', name='title' required)
+		.form-group
+			label Description
+				textarea.form-control(name='description' required)
+		.form-group
+			label Service
+				input.form-control(type='text', name='service' required)
+		.form-group
+			label Client
+				input.form-control(type='text', name='client' required)
+		.form-group
+			label Project Image
+				input.form-control(type='file', name='image')
+		.form-group
+			label Date
+				input.form-control(type='date', name='postDate')
+		button.btn.btn-default(type='submit') Submit

@@ -1,0 +1,42 @@
+doctype strict
+html(xmlns='http://www.w3.org/1999/xhtml')
+head
+	title Find a Doctor
+	meta(http-equiv='Content-Language', content='English')
+	meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+	link(rel='stylesheet', type='text/css', href='/stylesheets/style.css', media='screen')
+	body
+		#wrap
+			#header
+				h1
+					a(href='#') Find a Doctor
+				h2 Search for local Doctors
+			#menu
+				ul
+					li
+						a(href='/') Home
+					li
+						a(href='/doctors') Browse Doctors
+					li
+						a(href='/doctors/add') Add Doctor
+					li
+						a(href='/categories/add') Add Category
+			#content
+				.right
+					!=messages()
+					block content
+				.left
+					//include ./includes/categories.jade 
+					h2 Categories :
+					each category, i in cats
+						ul
+							li
+								a(href='/doctors/category/#{category.name}') #{category.name}
+
+						
+				div(style='clear: both;')  
+			#footer
+				Designed by 
+				a(href='http://www.free-css-templates.com/') Free CSS Templates
+				,Thanks to 
+				a(href='http://www.openwebdesign.org/') website design

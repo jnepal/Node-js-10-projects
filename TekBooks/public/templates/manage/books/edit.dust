@@ -1,0 +1,64 @@
+{> "layouts/manage" /}
+
+{<body}
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Add Book</h2>
+			<form method="post" action="/manage/books/edit/{book._id}">
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Title</label>
+						<input name="title" type="text" value="{book.title}" required/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Author</label>
+						<input name="author" type="text" value="{book.author}" required/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Publisher</label>
+						<input name="publisher" type="text" value="{book.publisher}"  required/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Price</label>
+						<input name="price" type="number" min="0" step="0.01" value="{book.price}"  required/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Category</label>
+						<select name="category">
+							{#categories}
+								<option value="{.name}">{.name}</opiton>
+							{/categories}
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Description</label>
+						<textarea name="description">{book.description}</textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Cover URL</label>
+						<input name="cover" type="text" value="{book.cover}" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<input type="submit" class="button" value="submit"/>
+					</div>
+					<!--prevents Cross Site Request Forgery-->
+					<input type="hidden" name="_csrf" value="{_csrf}">
+				</div>
+			</form>
+		</div>	
+	</div>
+{/body}

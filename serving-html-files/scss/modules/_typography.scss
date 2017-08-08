@@ -1,0 +1,123 @@
+
+/* Lists */
+
+.list{
+	margin-bottom:30px;
+}
+
+.list-feature{
+	@extend .list;
+	margin:0px;
+	padding:0px;
+	width:80%;
+	
+	li{
+		line-height:3.6em;
+		@include add-border(1px, #cccccc, bottom);
+	}
+	
+	li:last-child{
+		border:0px;
+	}
+	
+	span{
+		vertical-align:top;
+		padding-top:9px;
+		font-size:120%;
+	}
+	
+	i{
+		margin-top:-9px;
+		margin-right:5px;
+	}
+}
+.list-comments{
+	margin:0px;
+	padding:0px;
+
+	img{
+		width:100px;
+	}
+	li{
+		padding:10px 0px 5px 0px;
+		@include add-border(1px, #cccccc, bottom);
+		overflow:auto !important;
+	}
+	li:last-child{
+		border:0px !important;
+	}
+}
+
+/* Icons */
+
+.fa-2{
+	font-size:18px;
+}
+.fa-3{
+	font-size:24px;
+}
+.fa-4{
+	font-size:27px;
+}
+.fa-5{
+	font-size:35px;
+}
+.fa-6{
+	font-size:40px;
+}
+.fa-primary{
+	@include add-color($primary-color);	
+}
+.fa-border{
+	@include add-border(1px, $primary-color, all);
+	@include border-radius(5px);
+	padding:13px 15px;
+	width:70px;
+	margin-bottom:10px;
+}
+
+/* Headings */
+
+.heading-primary{
+	@include add-color($primary-color);
+}
+.heading-primary-a{
+	@extend .heading-primary;
+	@include add-border(2px, $primary-color, bottom);
+}
+.heading-secondary{
+	@include add-color($secondary-color);
+}
+.heading-secondary-a{
+	@extend .heading-secondary;
+	@include add-border(2px, $secondary-color, bottom);
+}
+.heading-light{
+	@include add-color($light-color);
+}
+.heading-light-a{
+	@extend .heading-light;
+	@include add-border(2px, $light-color, bottom);
+}
+.heading-dark{
+	@include add-color($dark-color);
+}
+.heading-dark-a{
+	@extend .heading-dark;
+	@include add-border(2px, $dark-color, bottom);
+}
+
+/* Emphasis Text */
+
+.em-primary{
+	@include add-color($primary-color);
+}
+.em-secondary{
+	@include add-color($secondary-color);
+}
+.em-light{
+	@include add-color($light-color);
+}
+.em-dark{
+	@include add-color($dark-color);
+}
